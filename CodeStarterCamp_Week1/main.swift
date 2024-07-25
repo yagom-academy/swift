@@ -1,25 +1,14 @@
-func drawIcecream(size: Int) {
-    for count in 1...size {
-        for count in 1...11 {
-            print("*", terminator: "")
-        }
-        print()
-    }
-}
+import Foundation
 
-func drawHandle(size: Int) {
-    for count in 1...size {
-        for count in 1...11 {
-            if count == 5 || count == 7 {
-                print("|", terminator: "")
-            }
-            else {
-                print(" ", terminator: "")
-            }
-        }
-        print()
-    }
-}
+// Step 2 - 아이스크림 그리기 실행 예시
+drawIceCreamBody(height: 8)
+drawIceCreamHandle(height: 4)
 
-drawIcecream(size: 8)
-drawHandle(size: 4)
+
+// Step 3 - 주문에 따른 빼빼로 그리기 실행 예시
+printPeperoAndInfo(bodyweight: 10, body: "***", topping: "", rodweight: 4)
+printPeperoAndInfo(bodyweight: 12, body: "***", topping: "&", rodweight: 4)
+printPeperoAndInfo(bodyweight: 12, body: "***", topping: "#", rodweight: 6)
+printPeperoAndInfo(bodyweight: 6, body: "|0|", topping: "", rodweight: 4)
+
+printPeperoAndInfo(bodyweight: 15, body: "| |", topping: "*", rodweight: 5)
