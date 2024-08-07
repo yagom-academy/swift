@@ -8,17 +8,17 @@
 
 import Foundation
 
-func icecream (cream: Int) {
+func makeIcecream (cream: Int) {
     for ice in 1...cream{
-        print("**********")
+        print("***********")
     }
 }
 
-func stick (stick: Int) {
+func makeStick (stick: Int) {
     for bar in 1...stick{
         print("    | |    ")
     }
 }
 
-icecream(cream: 8)
-stick (stick: 4)
+makeIcecream(cream: 8)
+makeStick (stick: 4)
