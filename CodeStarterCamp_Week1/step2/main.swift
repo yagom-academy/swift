@@ -13,5 +13,8 @@ func printElement(element: String, repeat_: Int) -> Void {
     }
 }
 
-printElement(element: "***********", repeat_: 8)
-printElement(element: "    | |", repeat_: 4)
+let iceCreamSize: (Int, Int) = (11, 8)
+let stickSize: (Int, Int) = (3, 4)
+
+printElement(element: String(repeating: "*", count: iceCreamSize.0), repeat_: iceCreamSize.1)
+printElement(element: String(repeating: " ", count: (iceCreamSize.0 - stickSize.0) / 2) + "| |", repeat_: stickSize.1)
