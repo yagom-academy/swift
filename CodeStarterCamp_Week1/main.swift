@@ -8,5 +8,5 @@
 
 import Foundation
 
-makeIcecream(cream: 8)
-makeStick (stick: 4)
+makeIcecream(Heightcream: 8)
+makeStick(Heightstick: 4)

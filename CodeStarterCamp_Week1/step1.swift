@@ -7,14 +7,14 @@
 
 import Foundation
 
-func makeIcecream (cream: Int) {
-    for _ in 1...cream{
+func makeIcecream(Heightcream: Int) {
+    for _ in 1...Heightcream {
         print("***********")
     }
 }
 
-func makeStick (stick: Int) {
-    for _ in 1...stick{
-        print("    | |    ")
+func makeStick (Heightstick: Int) {
+    for _ in 1...Heightstick{
+        print("    | |")
     }
 }
