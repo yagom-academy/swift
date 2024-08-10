@@ -21,6 +21,5 @@ func makeStick(height: Int) {
     }
 }
 
-
 makeIceCream(width: 11, height: 8)
 makeStick(height: 4)
