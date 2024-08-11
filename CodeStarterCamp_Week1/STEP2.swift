@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+func iceCream() {
+    for _ in 1...8 {
+        print("***********")
+    }
+}
+
+func stick() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
+
