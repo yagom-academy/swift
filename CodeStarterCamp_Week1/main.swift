@@ -8,5 +8,5 @@
 
 import Foundation
 
-print("Hello, World!")
-
+makeIcecream(Heightcream: 8)
+makeStick(Heightstick: 4)
