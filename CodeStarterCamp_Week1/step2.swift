@@ -20,6 +20,3 @@ func makeStick(height: Int) {
         print(element)
     }
 }
-
-makeIceCream(width: 11, height: 8)
-makeStick(height: 4)
