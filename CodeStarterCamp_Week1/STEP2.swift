@@ -7,13 +7,13 @@
 
 import Foundation
 
-func iceCream() {
+func creatCream() {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func stick() {
+func creatHandle() {
     for _ in 1...4 {
         print("    | |")
     }

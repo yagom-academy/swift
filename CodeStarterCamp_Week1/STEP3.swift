@@ -8,12 +8,15 @@
 import Foundation
 
 
+func creatPepero(body: String, topping: String, handleLength: UInt, bodyLength: UInt) {
+    let drawBody: String = bodyAndTopping(body: body, topping: topping)
+    
+    information(body: body, topping: topping, handleLength: handleLength, bodyLength: bodyLength)
+    creatBody(body: drawBody, length: bodyLength)
+    creatHandle(length: handleLength)
+}
 
-// 주문에 따른 빼빼로 그리기
-
-
-//호출 함수
-func pepero(body: String, topping: String, handleLength: UInt, bodyLength: UInt) {
+func information(body: String, topping: String, handleLength: UInt, bodyLength: UInt) {
     print("""
           \n<정보>
           길이: \(bodyLength)
@@ -21,27 +24,20 @@ func pepero(body: String, topping: String, handleLength: UInt, bodyLength: UInt)
           토핑: \(topping)
           막대길이: \(handleLength)\n
           """)
-    let drawBody: String = bodyAndTopping(body: body, topping: topping)
-    
-    bodyLen(body: drawBody, len: bodyLength)
-    handle(length: handleLength)
 }
 
-// 몸통 & 토핑
 func bodyAndTopping(body: String, topping: String = " ") -> String {
     return topping + body + topping
 }
 
-// 막대 손잡이 길이
-func handle(length: UInt) {
+func creatHandle(length: UInt) {
     for _ in 1...length {
         print(" | |")
     }
 }
 
-// 몸통 길이
-func bodyLen(body: String, len: UInt) {
-    for _ in 1...len {
+func creatBody(body: String, length: UInt) {
+    for _ in 1...length {
         print(body)
     }
 }
