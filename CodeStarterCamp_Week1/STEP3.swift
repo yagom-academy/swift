@@ -8,12 +8,12 @@
 import Foundation
 
 
-func creatPepero(body: String, topping: String, handleLength: UInt, bodyLength: UInt) {
+func createPepero(body: String, topping: String, handleLength: UInt, bodyLength: UInt) {
     let drawBody: String = bodyAndTopping(body: body, topping: topping)
     
     information(body: body, topping: topping, handleLength: handleLength, bodyLength: bodyLength)
-    creatBody(body: drawBody, length: bodyLength)
-    creatHandle(length: handleLength)
+    createBody(body: drawBody, length: bodyLength)
+    createHandle(length: handleLength)
 }
 
 func information(body: String, topping: String, handleLength: UInt, bodyLength: UInt) {
@@ -30,13 +30,13 @@ func bodyAndTopping(body: String, topping: String = " ") -> String {
     return topping + body + topping
 }
 
-func creatHandle(length: UInt) {
+func createHandle(length: UInt) {
     for _ in 1...length {
         print(" | |")
     }
 }
 
-func creatBody(body: String, length: UInt) {
+func createBody(body: String, length: UInt) {
     for _ in 1...length {
         print(body)
     }
