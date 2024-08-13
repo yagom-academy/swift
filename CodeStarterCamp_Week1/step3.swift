@@ -8,7 +8,23 @@
 import Foundation
 
 func makeBody(body: String, topping: String) -> String {
-    return topping + body + topping
+    if topping == "" {
+        return " " + topping + body + topping
+    } else {
+        return topping + body + topping
+    }
+}
+
+func drawBody(body: String, length: Int) {
+    for _ in 1...length {
+        print(body)
+    }
+}
+
+func drawStick(length: Int) {
+    for _ in 1...length {
+        print(" | |")
+    }
 }
 
 func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
@@ -18,8 +34,11 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
     몸통: \(body)
     토핑: \(topping)
     막대길이: \(stickLength)
+    
     """)
 
     let bodyWithTopping: String = makeBody(body: body, topping: topping)
-    print(bodyWithTopping)
+    
+    drawBody(body: bodyWithTopping, length: bodyLength)
+    drawStick(length: stickLength)
 }
