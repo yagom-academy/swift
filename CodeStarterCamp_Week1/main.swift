@@ -13,17 +13,25 @@
 
 import Foundation
 
-func iceCream() {
-    for star in 1...8 {
-        print("***********")
-    }
-}
+//아이스크림 그리기
+createCream()
+createHandle()
 
-func stick() {
-    for stick in 1...4 {
-        print("    | |")
-    }
-}
 
-iceCream()
-stick()
+//빼빼로 그리기
+
+// 실행 예시 1
+createPepero(body: "***", topping: " ", handleLength: 4, bodyLength: 10)
+
+// 실행 예시 2
+createPepero(body: "***", topping: "&", handleLength: 4, bodyLength: 12)
+
+// 실행 예시 3
+createPepero(body: "***", topping: "#", handleLength: 6, bodyLength: 12)
+
+// 실행 예시 4
+createPepero(body: "|0|", topping: " ", handleLength: 4, bodyLength: 6)
+
+// 나만의 뺴빼로
+createPepero(body: "***", topping: "$", handleLength: 5, bodyLength: 100)
+
