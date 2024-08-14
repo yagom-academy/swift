@@ -8,5 +8,4 @@
 
 import Foundation
 
-makeIcecream(Heightcream: 8)
-makeStick(Heightstick: 4)
+drawPepero(bodyLength: 6, body: "|0|", topping: "#", stickLength: 4)
