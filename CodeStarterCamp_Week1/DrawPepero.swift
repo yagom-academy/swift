@@ -8,28 +8,29 @@
 import Foundation
 
 // 막대 그리기
-func drawPeperoStick(length: Int) {
-    for _ in 0..<length {
+func drawPeperoStick(stickHeight: Int) {
+    for _ in 0..<stickHeight {
         print(" | |")
     }
 }
 
 // 토핑바디 그리기
-func drawToppingWithBody(body: String, topping: String) {
+func createPeperoLine(body: String, topping: String) {
     print("\(topping)\(body)\(topping)")
 }
 
 // 빼빼로 바디 그리기
-func drawPeperoBody(length: Int, body: String, topping: String) {
-    for _ in 0..<length {
-        drawToppingWithBody(body: body, topping: topping)
+func drawPeperoBody(bodyHeight: Int, body: String, topping: String) {
+    for _ in 0..<bodyHeight {
+        createPeperoLine(body: body, topping: topping)
     }
 }
 
 // 빼빼로 그리기
-func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int) {
-    let finalTopping = topping.isEmpty ? " " : topping
+func drawPepero(bodyHeight: Int, body: String, topping: String, stickHeight: Int) {
+    let emptyPadding = " "
+    let finalTopping = topping.isEmpty ? emptyPadding : topping
     
-    drawPeperoBody(length: bodyLength, body: body, topping: finalTopping)
-    drawPeperoStick(length: stickLength)
+    drawPeperoBody(bodyHeight: bodyHeight, body: body, topping: finalTopping)
+    drawPeperoStick(stickHeight: stickHeight)
 }
