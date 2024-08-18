@@ -7,7 +7,7 @@
 
 import Foundation
 
-func makeBody(body: String, topping: String) -> String {
+func makePepero(body: String, topping: String) -> String {
     if topping == "" {
         return " " + topping + body + topping
     } else {
@@ -37,7 +37,7 @@ func drawPepero(bodyLength: Int, body: String, topping: String, stickLength: Int
     
     """)
 
-    let bodyWithTopping: String = makeBody(body: body, topping: topping)
+    let bodyWithTopping: String = makePepero(body: body, topping: topping)
     
     drawBody(body: bodyWithTopping, length: bodyLength)
     drawStick(length: stickLength)
