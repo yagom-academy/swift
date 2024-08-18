@@ -8,7 +8,7 @@
 import Foundation
 
 func makePepero(body: String, topping: String) -> String {
-    if topping == "" {
+    if topping.isEmpty {
         return " " + topping + body + topping
     } else {
         return topping + body + topping
