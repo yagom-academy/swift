@@ -1,12 +1,14 @@
-//
-//  main.swift
-//  CodeStarterCamp_Week1
-//
-//  Created by yagom.
-//  Copyright © yagom academy. All rights reserved.
-//
+func createIceCreamBody(){
+    for _ in 1...8{
+        print(String(repeating:"*", count:11))
+    }
+}
 
-import Foundation
+func createIceCreamStick() {
+    for _ in 1...4 {
+        print("    | |")
+    }
+}
 
-print("Hello, World!")
-
+createIceCreamBody()
+createIceCreamStick()
