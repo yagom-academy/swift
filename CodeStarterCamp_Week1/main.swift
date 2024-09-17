@@ -8,5 +8,4 @@
 
 import Foundation
 
-drawIceCreamBody()
-drawIceCreamBar()
+drawPepero(stickLength: 4, bodyDecoration: "*", topping: "!", bodyLength: 10)
