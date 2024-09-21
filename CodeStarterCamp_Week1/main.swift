@@ -8,5 +8,14 @@
 
 import Foundation
 
-print("Hello, World!")
+let iceCreamBody = "***********"
+let iceCreamStick = "    | |    "
+
+for _ in 1...8{
+    print("\(iceCreamBody)")
+}
+
+for _ in 1...4{
+    print("\(iceCreamStick)")
+}
 
