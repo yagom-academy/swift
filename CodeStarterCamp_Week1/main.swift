@@ -28,3 +28,5 @@ func iceCreamStick(size: Int){
 
 iceCream(size: 8)
 iceCreamStick(size: 4)
+
+makePepero(bodylength: 10, bodyStyle: "*", topping: "$", stickLength: 4)
