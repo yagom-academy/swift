@@ -8,20 +8,19 @@
 
 import Foundation
 
-func icecream() {
+func iceCreamBody() {
     for _ in 1...8 {
         print("***********")
     }
 }
 
-func bar() {
+func iceCreamBar() {
     for _ in 1...4 {
         print("    | |")
     }
 }
 
-icecream()
-bar()
+iceCreamBody()
+iceCreamBar()
 
-
-makeIceCream()
+makePepero(bodyLength: 3 ,body: "|0|", topping: " ",barLength: 3)
