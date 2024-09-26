@@ -7,7 +7,7 @@
 
 import Foundation
 
-func makePepero(bodylength: Int, bodyStyle: String, bodyTopping: String, stickLength: Int){
+func makePepero(bodylength: Int, bodyStyle: String, bodyTopping: String, stickLength: Int) {
     
     print("<정보>")
     print("길이:" ,bodylength)
@@ -16,20 +16,20 @@ func makePepero(bodylength: Int, bodyStyle: String, bodyTopping: String, stickLe
     print("막대길이: \(stickLength)")
     print("")
         
-    func bodySet(_ bodylength: Int){
+    func makeBody(_ bodylength: Int) {
         for _ in 1...bodylength {
             print("\(bodyTopping) \(bodyStyle) \(bodyTopping)")
         }
     }
     
-    func stick(_ stickLength: Int){
+    func makeStick(_ stickLength: Int) {
         for _ in 1...stickLength {
             print(" | | ")
         }
     }
 
-    bodySet(bodylength)
-    stick(stickLength)
+    makeBody(bodylength)
+    makeStick(stickLength)
     
 }
 
