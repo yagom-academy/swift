@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
 
+makeIceCreamBody(extent: 8)
+makeIceCreamStick(length: 4)
+
+makePepero(bodylength: 10, bodyStyle: "*", bodyTopping: "#", stickLength: 4)
